@@ -1,0 +1,10 @@
+{
+  "description": "Showcases imported cars with a focus on Golf GTI, offering an easy-to-use interface for listing vehicles and AI-generated descriptions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

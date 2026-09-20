@@ -1,0 +1,58 @@
+// Sample cars shown when no real cars are in localStorage
+// images = 1100×688 (16:10 gallery), thumbs = 600×375 (16:10 cards)
+export const SAMPLE_CARS = [
+  {
+    id: 'sample-1', brand: 'Volkswagen', name: 'Golf GTI Performance',
+    year: 2022, km: '45.000 km', price: '28.500', fuel: 'Gasolina', trans: 'DSG 7', hp: '245 CV',
+    images: ['https://images.unsplash.com/photo-1565786089437-496904c48734?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1565786089437-496904c48734?w=600&h=375&fit=crop&auto=format'],
+    badge: 'Destacado', type: 'gti' as const,
+    description: 'El Golf GTI Performance en su versión de 245 CV representa la cúspide del hot hatch alemán. Con su caja DSG de doble embrague y su potente motor TSI, ofrece una experiencia de conducción electrizante tanto en ciudad como en carretera.',
+    active: true, createdAt: 0,
+  },
+  {
+    id: 'sample-2', brand: 'Volkswagen', name: 'Golf GTI Clubsport',
+    year: 2023, km: '12.000 km', price: '35.900', fuel: 'Gasolina', trans: 'DSG 7', hp: '300 CV',
+    images: ['https://images.unsplash.com/photo-1573502721625-c482d1bc3935?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1573502721625-c482d1bc3935?w=600&h=375&fit=crop&auto=format'],
+    badge: 'Nuevo', type: 'gti' as const,
+    description: 'El GTI Clubsport lleva la esencia deportiva al siguiente nivel con 300 CV y un chasis optimizado para el circuito. Edición especial con diferencial de deslizamiento limitado de serie y aerodinámica mejorada.',
+    active: true, createdAt: 0,
+  },
+  {
+    id: 'sample-3', brand: 'Volkswagen', name: 'Golf GTI 45th Edition',
+    year: 2023, km: '8.500 km', price: '38.500', fuel: 'Gasolina', trans: 'DSG 7', hp: '265 CV',
+    images: ['https://images.unsplash.com/photo-1572557144490-5ca8f1ac1d47?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1572557144490-5ca8f1ac1d47?w=600&h=375&fit=crop&auto=format'],
+    badge: 'Ed. Especial', type: 'gti' as const,
+    description: 'Celebrando 45 años del icónico GTI, esta edición especial cuenta con detalles exclusivos en el exterior e interior. Solo 3.000 unidades para toda Europa, ahora disponible importado directamente de Alemania.',
+    active: true, createdAt: 0,
+  },
+  {
+    id: 'sample-4', brand: 'Porsche', name: 'Cayenne S',
+    year: 2020, km: '62.000 km', price: '68.900', fuel: 'Gasolina', trans: 'Tiptronic S', hp: '440 CV',
+    images: ['https://images.unsplash.com/photo-1654159866298-e3c8ee93e43b?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1654159866298-e3c8ee93e43b?w=600&h=375&fit=crop&auto=format'],
+    badge: '', type: 'suv' as const,
+    description: 'El Cayenne S combina el rendimiento de un deportivo con la versatilidad de un SUV de lujo. Motor V6 biturbo de 440 CV, suspensión neumática adaptativa y los más avanzados sistemas de asistencia a la conducción.',
+    active: true, createdAt: 0,
+  },
+  {
+    id: 'sample-5', brand: 'Volkswagen', name: 'Golf R 4Motion',
+    year: 2022, km: '31.000 km', price: '44.500', fuel: 'Gasolina', trans: 'DSG 7', hp: '320 CV',
+    images: ['https://images.unsplash.com/photo-1579618666052-1280d34a6c69?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1579618666052-1280d34a6c69?w=600&h=375&fit=crop&auto=format'],
+    badge: '', type: 'gti' as const,
+    description: 'El Golf R es la versión más extrema de la gama Golf. Con tracción integral 4Motion y 320 CV, este compacto alemán defrauda a la física en cada curva. Modos de conducción incluyendo Nürburgring.',
+    active: true, createdAt: 0,
+  },
+  {
+    id: 'sample-6', brand: 'Citroën', name: 'Berlingo XL',
+    year: 2023, km: '18.000 km', price: '24.900', fuel: 'Diesel', trans: 'Manual 6', hp: '130 CV',
+    images: ['https://images.unsplash.com/photo-1743245840842-3461de5cd135?w=1100&h=688&fit=crop&auto=format'],
+    thumbs: ['https://images.unsplash.com/photo-1743245840842-3461de5cd135?w=600&h=375&fit=crop&auto=format'],
+    badge: '', type: 'furgoneta' as const,
+    description: 'El Berlingo XL en versión larga ofrece una versatilidad excepcional para familias numerosas o uso profesional. Amplio maletero, tres filas de asientos y un motor diésel eficiente para largas distancias.',
+    active: true, createdAt: 0,
+  },
+]

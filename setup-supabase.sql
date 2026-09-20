@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS kv_store_5ac30d3f (
+  key TEXT NOT NULL PRIMARY KEY,
+  value JSONB NOT NULL
+);
+
+ALTER TABLE kv_store_5ac30d3f ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "allow_all" ON kv_store_5ac30d3f
+  FOR ALL TO anon
+  USING (true)
+  WITH CHECK (true);

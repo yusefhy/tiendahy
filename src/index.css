@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: #060606;
+  --color-foreground: #F0EEE8;
+  --color-card: #101010;
+  --color-card-foreground: #F0EEE8;
+  --color-primary: #CC0000;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1A1A1A;
+  --color-secondary-foreground: #A09E98;
+  --color-muted: #181818;
+  --color-muted-foreground: #6B6966;
+  --color-accent: #CC0000;
+  --color-accent-foreground: #ffffff;
+  --color-border: rgba(255,255,255,0.08);
+  --color-ring: #CC0000;
+  --radius: 2px;
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #060606;
+  color: #F0EEE8;
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #060606;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8952A;
+  border-radius: 0;
+}
+
+.font-display {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.gold-line {
+  display: inline-block;
+  width: 48px;
+  height: 3px;
+  background: #CC0000;
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+  .hide-mobile-sm { display: none !important; }
+  .show-mobile { display: flex !important; }
+  .form-grid { grid-template-columns: 1fr !important; }
+  .hero-desktop { display: none !important; }
+  .hero-mobile { display: block !important; }
+}
+
+@media (min-width: 769px) {
+  .show-mobile { display: none !important; }
+  .hero-mobile { display: none !important; }
+  .hero-desktop { display: block !important; }
+}
+
+/* Stats scroll */
+.stats-scroll {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.stats-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth image load */
+img {
+  display: block;
+}
