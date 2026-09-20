@@ -744,7 +744,10 @@ function Footer() {
           </div>
         </div>
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: 22, display: 'flex', flexWrap: 'wrap', gap: '8px 24px', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontFamily: F_BODY, color: 'rgba(255,255,255,0.12)', fontSize: 11 }}>© 2025 H&Y Motors · hymotors.es</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+            <span style={{ fontFamily: F_BODY, color: 'rgba(255,255,255,0.12)', fontSize: 11 }}>© 2025 H&Y Motors · hymotors.es</span>
+            <span style={{ fontFamily: F_BODY, color: 'rgba(255,255,255,0.08)', fontSize: 10 }}>H&Y MOTORWORKS PERFORMANCE SL · B25868878 · Avenida de Fuenlabrada 62, Humanes de Madrid 28970</span>
+          </div>
           <div style={{ display: 'flex', gap: 20 }}>
             {['Aviso legal', 'Privacidad', 'Cookies'].map(t => (
               <a key={t} href="#" style={{ fontFamily: F_BODY, color: 'rgba(255,255,255,0.12)', textDecoration: 'none', fontSize: 11, fontWeight: 400, transition: 'color 0.15s' }}
